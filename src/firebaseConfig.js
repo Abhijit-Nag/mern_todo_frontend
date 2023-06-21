@@ -23,7 +23,7 @@ const provider = new GoogleAuthProvider();
 
 export const signInWithGoogle = () => {
   signInWithPopup(auth, provider).then((result) => {
-    console.log(result);
+    console.log(`firebase auth result : ${result}`);
     const name= result.user.displayName;
     const email= result.user.email;
     const profilePic= result.user.photoURL;
