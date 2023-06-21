@@ -15,7 +15,8 @@ const Tasks = () => {
   const userEmail = localStorage.getItem("email");
   useEffect(() => {
     const fetchData = async () => {
-      const tasks = await axios.get(`http://localhost:5000/auth/tasks/?userEmail=${userEmail}`,);
+      // const tasks = await axios.get(`http://localhost:5000/auth/tasks/?userEmail=${userEmail}`,);
+      const tasks = await axios.get(`https://mern-todo-api-vlxn.onrender.com/auth/tasks/?userEmail=${userEmail}`,);
       console.log(`the tasks are:` + tasks);
       setTask(tasks.data);
     }
