@@ -1,0 +1,44 @@
+.modal {
+    border: 1px solid teal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    // background-color: rgb(94, 144, 94);
+    background-color: white;
+    bottom: 0;
+
+    margin: auto;
+    z-index: 999999;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+
+    h2 {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .title {
+        height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .task {
+        border: 1px solid teal;
+        height: 100px;
+    }
+
+    .close {
+        margin: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+}
